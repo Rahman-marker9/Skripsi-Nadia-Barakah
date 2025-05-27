@@ -71,11 +71,12 @@
     }
 
     iframe {
-      width: 1000px; /* Lebar tetap, agar bisa di-zoom */
-      height: 600px;
-      border: none;
-      border-radius: 10px;
-    }
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  max-width: 1000px;
+  border: none;
+  border-radius: 10px;
+}
 
     @media screen and (max-width: 768px) {
       .container {
@@ -121,7 +122,8 @@
       <div class="iframe-container">
         <iframe 
   src="https://phet.colorado.edu/sims/html/fluid-pressure-and-flow/latest/fluid-pressure-and-flow_en.html" 
-  allowfullscreen>
+  allowfullscreen 
+  loading="lazy">
 </iframe>
       </div>
     </div>
